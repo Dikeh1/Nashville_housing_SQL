@@ -1,6 +1,6 @@
 ## Nashville Housing Data for Data Cleaning using SQL Server
 
-![housing.jpg](attachment:036250f2-b2d9-4b3d-b4fb-fd35d92cbfa8.jpg)
+![image](https://drive.google.com/file/d/1zODH5RO-mglyyYmwUDMQlvnR3fvpAGVP/view?usp=share_link)
 
 #### In this Project we take raw housing data and transform it in SQL Server to make it more usable for analysis. Some of the steps taken in cleaning the data are as follows:
 
