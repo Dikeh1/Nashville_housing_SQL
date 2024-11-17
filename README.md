@@ -5,12 +5,12 @@
 
 #### In this Project we take raw housing data and transform it in SQL Server to make it more usable for analysis. Some of the steps taken in cleaning the data are as follows:
 
-#### **1. Standardize Date format** : The date column was set in the write format that would be useful for analysis
+#### **1. Standardize Date Format: The date column was formatted in a way that is consistent and suitable for analysis
 
-#### **2. Populate Property Address data**: Inorder to make the address column ready for analysis, We began by checking for incomplete data ('NULL' values). We populated this spaces by joining the data to itself using the 'ParcelID' as a reference point. The dataset was updated. We then proceeded to break down the address column into individual columns including 'Address', 'City' and 'State'.
+#### **2. Populate Property Address Data: To prepare the address column for analysis, we first checked for missing data (NULL values). We filled these gaps by joining the data to itself using the 'ParcelID' as a reference. The dataset was then updated. We then proceeded to split the address column into separate columns for 'Address', 'City', and 'State'..
 
-#### **3. Changing Y and N into 'yes' and 'no' in 'SoldAsVacant' column**: The Case statement was used to to change data into the appriopriate format in the 'SoldAsVacant' column 
+#### **3. Changing Y and N to 'yes' and 'no' in 'SoldAsVacant' Column: We used a CASE statement to convert the data in the 'SoldAsVacant' column into the desired format of 'yes' and 'no'.
 
-#### **4. Remove duplicate**: ROW_NUMBER() and Partition by clause were used to identify duplicate data in the Nashville housing data. These data were deleted afterwards.
+#### **4. Remove Duplicates: We identified duplicate data in the Nashville housing data using the ROW_NUMBER() function and the PARTITION BY clause. These duplicates were then deleted.
 
-#### **5. Delete Unused Columns**: Although, this methd is not usually advised, but for the sake of the project, we deleted the unused columns and kept the the cleaned format which can then be used for futher analysis and visualization
+#### **5. Delete Unused Columns: While deleting columns is generally not recommended, for the sake of this project, we removed unused columns to maintain a clean format suitable for further analysis and visualization.
